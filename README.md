@@ -25,50 +25,10 @@ I want to just build things up from basic components and not rely on axis2 to do
 
 ### Maven Project Creation
 
-Using maven to generate the basic layout, this needs a skeleton pom.xml file:
+Using maven to generate the basic layout run the following command
 
 ```
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-	http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.hiklas.mucking.around</groupId>
-  <artifactId>BasicAxis2Webapp</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1</version>
-  <name>Basic Axis2 Web application</name>
-  <url>https://github.com/fionahiklas/axis2_mucking_around/</url>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-   
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>2.0.54-beta</version>
-      <scope>test</scope>
-    </dependency>  
-  </dependencies>
-
-  <build>
-    <finalName>BasicAxis2Webapp</finalName>
-  </build>
-
-</project>
-
-```
-
-Then run the following command
-
-```
-mvn archetype:generate -DgroupId=com.hiklas.mucking.around -DartifactId=BasicAxis2WebApp =DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.hiklas.mucking.around -DartifactId=BasicAxis2WebApp -Dversion=0.0.1 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 ```
 
 
